@@ -1,0 +1,5 @@
+Types of CSS -
+
+1. Inline CSS - used inside the html tags
+2. Internal CSS - used inside head tags
+3. External CSS - linked to HTML files using <link> tag in the head section
