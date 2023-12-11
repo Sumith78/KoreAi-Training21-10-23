@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "open Sans";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #2c3e50;
+}
+
+form {
+  padding: 25px;
+  background: #ecf0f1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 7px;
+  color: #2c3e50;
+}
+
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px solid #bfbfbf;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+
+form input.error,
+form select.error {
+  background-color: #f91919;
+  background: #f9f0f1;
+}
+
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+.form-group.gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.gender label {
+  margin-bottom: 8px;
+}
+
+.form-group.gender select {
+  height: 45px;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.submit-btn input {
+  color: #ffffff;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  padding: 0;
+  border-radius: 60px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #000000;
+  transition: background 0.3s ease;
+  overflow: hidden;
+}
+
+.submit-btn input:hover {
+  background: #1a1a;
+}
+
+
+.submit-btn input:active {
+  transform: scale(0.95);
+}
+
+/* Additional styles for thank-you page */
+#thank-you-content {
+  text-align: center;
+  margin-top: 20px;
+  color: #3498db;
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+  margin-top: 20px;
+}
+
+/* Toggle Password Visibility Icon Styles */
+#pass-toggle-btn {
+  cursor: pointer;
+}
+
+#pass-toggle-btn:hover {
+  color: #555;
+}
+/* Add this CSS for the password visibility toggle */
+
+.form-group.password {
+  position: relative;
+}
+
+.form-group.password input {
+  padding-right: 30px; /* Space for the eye icon */
+}
+
+.form-group.password::after {
+  content: "\33f06e"; /* Unicode for the eye icon in Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 20px;
+  top: 65%;
+  transform: translateY(-45%);
+  cursor: pointer;
+  color: #939393;
+  font-size: 18px;
+  pointer-events: none; /* Allow clicking through the pseudo-element */
+}
+
+/* Additional styles for the eye icon */
+.form-group.password:hover::after {
+  color: #555;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+  form {
+    max-width: 90%;
+  }
+}
