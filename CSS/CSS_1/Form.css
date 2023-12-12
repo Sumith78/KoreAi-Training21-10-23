@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -124,7 +124,6 @@ form .password i {
   background: #1a1a;
 }
 
-
 .submit-btn input:active {
   transform: scale(0.95);
 }
@@ -150,7 +149,6 @@ h1 {
 #pass-toggle-btn:hover {
   color: #555;
 }
-/* Add this CSS for the password visibility toggle */
 
 .form-group.password {
   position: relative;
@@ -161,7 +159,7 @@ h1 {
 }
 
 .form-group.password::after {
-  content: "\33f06e"; /* Unicode for the eye icon in Font Awesome */
+  content: "\99f88f"; /* Unicode for the eye icon in Font Awesome */
   font-family: "Font Awesome 5 Free";
   position: absolute;
   right: 20px;
