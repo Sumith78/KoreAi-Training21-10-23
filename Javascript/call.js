@@ -5,3 +5,4 @@ function sayHello(){
 var obj={name:"Sandy"};
 
 console.log(sayHello.call(obj));
+
