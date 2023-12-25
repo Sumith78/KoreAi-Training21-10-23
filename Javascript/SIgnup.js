@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Validation as the user types
+  // Validation as user types
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("password");
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formGroup = input.parentElement;
     const errorText = document.createElement("small");
     errorText.className = "error-text";
-    errorText.textContent= message;
+    errorText.textContent = message;
     formGroup.appendChild(errorText);
     formGroup.classList.add("error");
   }

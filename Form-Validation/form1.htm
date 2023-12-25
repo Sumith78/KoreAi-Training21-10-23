@@ -5,32 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Page</title>
   <link rel="stylesheet" type="text/css" href="../CSS/CSS_1/style.css">
+  <script src="../Javascript/Signup.js" defer></script>
 </head>
 <body>
   <div class="signup-box">
     <h1>Sign Up</h1>
     <h4>It will hardly take a minute for sign up</h4>
 
-    <form >
-      <label for="name">First Name</label>
-      <input type="text" placeholder="Enter Your First Name" name="name">
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Enter Your Full Name" name="name" id="name" required>
+        <small class="error-text"></small>
+      </div>
 
-      <label for="name">Last Name</label>
-      <input type="text" placeholder="Enter Your Last Name"  name="name">
-      <label for="email">Email</label>
-      <input type="text" placeholder="Enter Your Email" name="email">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
+        <small class="error-text"></small>
+      </div>
 
-      <label for="password">Password</label>
-      <input type="password" placeholder="Enter Your Password" name="password">
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Your Password" name="password" id="password" required>
+        <small class="error-text"></small>
+      </div>
 
-      <label for="confirmpassword">Confirm password</label>
-      <input type="password" placeholder="Confirm Password" name="confirmpassword">
+      <div class="form-group">
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword" required>
+        <small class="error-text"></small>
+      </div>
 
-      <input type="button" value="Sign Up">
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        <small class="error-text"></small>
+      </div>
 
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="" selected disabled>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+        <small class="error-text"></small>
+      </div>
+
+      <input type="submit" value="Sign Up">
     </form>
 
-    <p>By clicking the Sign Up button , you agree to our <br><a href=""> Terms and Condition</a> and <a href="#">privacy policy</a></p>
+    <div id="thank-you-content" style="display: none;">
+      <h1>Thank you for filling the form correctly.</h1>
+    </div>
+
+    <p>By clicking the Sign Up button, you agree to our <br><a href="#">Terms and Condition</a> and <a href="#">privacy policy</a></p>
   </div>
   <p class="already">Already have an account? <a href="login.htm"> Login here</a></p>
 </body>

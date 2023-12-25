@@ -159,12 +159,12 @@ h1 {
 }
 
 .form-group.password::after {
-  content: "\99f88f"; /* Unicode for the eye icon in Font Awesome */
+  content: "\98f88f"; /* Unicode for the eye icon in Font Awesome */
   font-family: "Font Awesome 5 Free";
   position: absolute;
   right: 20px;
-  top: 65%;
-  transform: translateY(-45%);
+  top: 30px;
+  /* transform: translateY(-50%); */
   cursor: pointer;
   color: #939393;
   font-size: 18px;
@@ -173,7 +173,7 @@ h1 {
 
 /* Additional styles for the eye icon */
 .form-group.password:hover::after {
-  color: #555;
+  color: #b11313;
 }
 
 /* Responsive Styling */
